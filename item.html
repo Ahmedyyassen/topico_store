@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image icon/x-icon" href="img/logo-black.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/resposive.css">
+    <title>Topico</title>
+</head>
+<body>
+    <header >
+        <nav >
+            <div class="topnav container">
+                <a href="#"><img src="img/logo-black.png" alt=""></a>
+                <form class="search">
+                    <input type="text" placeholder="Search for products...">
+                    <button>Search</button>
+                </form>
+                <div class="cart-item">
+                    <div class="cart">
+                        <i id="cart" class="fa-solid fa-bag-shopping"></i>
+                        <span id="counter">0</span>
+                    </div>
+                    <div class="total-price">
+                        <p>My Cart:</p>
+                        <span id="total_price">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <nav >
+                <div class="lownav container">
+                    <i id="bar" class="fa-solid fa-bars"></i>
+                    
+                    <ul class="list" id="list">
+                        <img src="../img/logo-black.png" class="bar_image">
+                        <div class="blur_screen" id="blur_screen"></div>
+                        
+                        <i id="xmark" class="fa-regular fa-circle-xmark"></i>
+                        <li><a href="index.html" >home</a></li>
+                        <li><a href="all_product.html">all product</a></li>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                    <div class="sign-up">
+                        <a href="login-page/index.html">login<i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a href="">sign up<i class="fa-solid fa-user-plus"></i></a>
+                    </div>
+
+                    
+                </div>
+               
+            </nav>
+       
+    </header>
+    <!-- ------------------------------------------------ -->
+    <div class="side" id="side">
+        <div class="top">
+          <div class="text"><h2>My Cart</h2><span id="top_counter">(0 item in cart)</span></div> 
+          <button><i id="close" class="fa-regular fa-circle-xmark"></i> </button>
+        </div>
+        <div id="content" class="content">
+
+            <!-- <div class="item">
+                <img src="img/product/product-1.jpg" alt="">
+                <div class="info">
+                    <h2>original mobile android dual SIM smart phone g3</h2>
+                    <p>$225</p>
+                </div>
+                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+            </div> -->
+
+
+        </div>
+
+        <div class="low">
+            <div class="subtotal">
+                <h2>cart subtotal</h2>
+                <span id="low_total_price">$0.00</span>
+            </div>
+            <a href="#" class="btn">proceed to checkout</a>
+            <button class="btn btnn">shop more</button>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------ -->
+    <div class="item_details">
+        <div  class="container">
+
+       
+             <div class="image">
+                <div class="big_img">
+                    <img src="img/item/samsung s22 ultra/item0.webp" id="big_img">
+                </div>
+                <div class="samall_image">
+                    <span><img src="img/item/samsung s22 ultra/item0.webp" id="small_img0"></span>
+                    <span><img src="img/item/samsung s22 ultra/item1.webp" id="small_img1"></span>
+                    <span><img src="img/item/samsung s22 ultra/item2.webp" id="small_img2"></span>
+                    <span><img src="img/item/samsung s22 ultra/item3.webp" id="small_img3"></span>
+                   
+                </div>
+            </div>
+
+
+            <div class="details">
+                <h1>Samsung Galaxy S24 Ultra 5G AI 256GB 512GB 1TB Unlocked New Sealed</h1>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <h4>$1,849</h4>
+                    <h5>$1,999</h5>
+                </div>
+                <h4>availability: <span>in stock</span></h4>
+                <h4>SKU: <span>Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, error consequatur. Nemo quisquam deleniti repudiandae sint. Aperiam cumque minima, harum est vel adipisci reiciendis architecto voluptatem fuga consequuntur nihil ducimus assumenda sapiente laborum exercitationem libero. Ducimus quidem, distinctio ipsum sint illum delectus facere et quos? Tempore eius magni, optio impedit nisi dolore animi perspiciatis explicabo unde quo aut! Temporibus, nesciunt.</p>
+                <h2>Hurrry Up! Only 98 products left in stock</h2>
+                <button id="button_cart" onclick=" addToCart(0,this )">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+                <div class="low_bar">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-sliders"></i></span>
+                    <span><i class="fa-solid fa-print"></i></span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+
+
+<section class="slide slide-sale">
+    <div class="container">
+        <div class="sale-sec mySwiper">
+            <div class="top-slide">
+                <h2>on sale <span>product</span></h2>
+            </div>
+            <div id="projects_json" class="products swiper-wrapper">
+
+                <!-- <div class="product swiper-slide">
+
+                    <span class="sale-parsent">%16 </span>
+
+                    <div class="side-bar">
+                        <span><i class="fa-solid fa-cart-plus"></i></span>
+                        <span><i class="fa-solid fa-heart"></i></span>
+                        <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+
+                    <div class="img-product">
+                        <img src="img/product/product-1.jpg" alt="">
+                        <img src="img/product/product1.jpg" alt="" class="hover-img">
+                    </div>
+
+                    <h3><a href="">Lorem ipsum dolor
+                            sit amet consectetur.</a>
+                    </h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="price">
+                        <p>$115</p>
+                        <div class="before">$85</div>
+                    </div>
+                    </div> -->
+            </div>
+
+            <div class="swiper-button-next btn-swip"></div>
+            <div class="swiper-button-prev btn-swip"></div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="backtotop">
+   <h2>back to top</h2>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="logo_content">
+            <img src="img/logo-white.png" alt="">
+            <div class="contact_us">
+                <i class="fa-solid fa-headset"></i>
+                <div class="hotline">
+                    <h5>hotline free 24/24:</h5>
+                   <h6> (+100) 123 456 7890</h6>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, omnis!</p>
+        </div>
+
+        <div class="tags">
+         <h4>faq & help</h4>
+
+         <div class="links">
+            <a href="">f.a.q's</a>
+            <a href="">ordering tracking</a>
+            <a href="">contacts</a>
+            <a href="">events</a>
+            <a href="">help center</a>
+         </div>
+        </div>
+        <div class="tags">
+              <h4>shipping & delivery</h4>
+              <div class="links">
+                <a href="">delivery information</a>
+                <a href="">discount</a>
+                <a href="">payment & shipping</a>
+                <a href="">estimated delivery time</a>
+                <a href="">shipping guide</a>
+             </div>
+        </div>
+
+        <div class="tags">
+                <h4>information</h4>
+                <div class="links">
+                    <a href="">popular</a>
+                    <a href="">our services</a>
+                    <a href="">your account</a>
+                    <a href="">privacy policy</a>
+                    <a href="">terms & condition</a>
+                 </div>
+        </div>
+    </div>
+
+
+    <div class="bottm-footer">
+        <div class="container">
+            <p>copyright &copy; <span> topico. </span> all rights reserved</p>
+            <div class="payment_img">
+                <img src="img/payment-1.png" >
+                <img src="img/payment-2.png" >
+                <img src="img/payment-3.png" >
+                <img src="img/payment-4.png" >
+    
+    
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+<script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/Swipper.js"></script>
+  <script src="js/item_home.js"></script>
+<script src="js/item.js"></script>
+</body>
+</html>

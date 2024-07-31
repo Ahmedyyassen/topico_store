@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image icon/x-icon" href="img/logo-black.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/resposive.css">
+    <title>All product</title>
+</head>
+<body>
+    <header >
+        <nav >
+            <div class="topnav container">
+                <a href="#"><img src="img/logo-black.png" alt=""></a>
+                <form class="search">
+                    <input type="text" placeholder="Search for products...">
+                    <button>Search</button>
+                </form>
+                <div class="cart-item">
+                    <div class="cart">
+                        <i id="cart" class="fa-solid fa-bag-shopping"></i>
+                        <span id="counter">0</span>
+                    </div>
+                    <div class="total-price">
+                        <p>My Cart:</p>
+                        <span id="total_price">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <nav >
+                <div class="lownav container">
+                    <i id="bar" class="fa-solid fa-bars"></i>
+                    
+                    <ul class="list" id="list">
+                        <img src="../img/logo-black.png" class="bar_image">
+                        <div class="blur_screen" id="blur_screen"></div>
+                        
+                        <i id="xmark" class="fa-regular fa-circle-xmark"></i>
+                        <li><a href="index.html" >home</a></li>
+                        <li><a href="" class="active">all product</a></li>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                    <div class="sign-up">
+                        <a href="login-page/index.html">login<i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a href="">sign up<i class="fa-solid fa-user-plus"></i></a>
+                    </div>
+
+                    
+                </div>
+               
+            </nav>
+       
+    </header>
+    <!-- ------------------------------------------------ -->
+
+
+    <div class="side" id="side">
+        <div class="top">
+          <div class="text"><h2>My Cart</h2><span id="top_counter">(0 item in cart)</span></div> 
+          <button><i id="close" class="fa-regular fa-circle-xmark"></i> </button>
+        </div>
+        <div id="content" class="content">
+
+            <!-- <div class="item">
+                <img src="img/product/product-1.jpg" alt="">
+                <div class="info">
+                    <h2>original mobile android dual SIM smart phone g3</h2>
+                    <p>$225</p>
+                </div>
+                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+            </div> -->
+
+
+        </div>
+
+        <div class="low">
+            <div class="subtotal">
+                <h2>cart subtotal</h2>
+                <span id="low_total_price">$0.00</span>
+            </div>
+            <a href="#" class="btn">proceed to checkout</a>
+            <button class="btn btnn">shop more</button>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------ -->
+
+    <section class="all_product">
+        <div class="container">
+            <div class="text">
+                <h1>Experience the Future of Tecchnology with Our Topico</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur temporibus obcaecati, illum voluptates aliquam facilis voluptatibus debitis itaque necessitatibus asperiores?</p>
+            </div>
+
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">/ All Product</li>
+            </ul>
+
+            <div class="all_item_filter">
+                <div id="filter">Filter <i class="fa-solid fa-filter" ></i></div>
+               
+                <div class="filter" id="filter_list">
+                  <h1>Filter</h1>
+                  <div class="filter_option">
+                    <h4>categorie</h4>
+                    <div class="select">
+                        <label for="1">phones</label>
+                        <input type="checkbox" id="1" checked>
+                    </div>
+                    <div class="select">
+                        <label for="2">tablets</label>
+                        <input type="checkbox" id="2">
+                    </div>
+                    <div class="select">
+                        <label for="3">electronics</label>
+                        <input type="checkbox" id="3">
+                    </div>
+                    <div class="select">
+                        <label for="4">TV</label>
+                        <input type="checkbox" id="4" checked>
+                    </div>
+                    <div class="select">
+                        <label for="5">fashion</label>
+                        <input type="checkbox" id="5">
+                    </div>
+                    <div class="select">
+                        <label for="6">watches</label>
+                        <input type="checkbox" id="6" checked>
+                    </div>
+             
+                  </div>
+
+                  <div class="filter_option">
+                    <h4>brand</h4>
+                    <div class="select">
+                        <label for="7">apple</label>
+                        <input type="checkbox" id="7" checked>
+                    </div>
+                    <div class="select">
+                        <label for="8">samsung</label>
+                        <input type="checkbox" id="8" checked>
+                    </div>
+                    <div class="select">
+                        <label for="9">intel</label>
+                        <input type="checkbox" id="9">
+                    </div>
+                    <div class="select">
+                        <label for="10">oppo</label>
+                        <input type="checkbox" id="10">
+                    </div>
+                    <div class="select">
+                        <label for="11">xiaomi</label>
+                        <input type="checkbox" id="11">
+                    </div>
+                    <div class="select">
+                        <label for="12">huawei</label>
+                        <input type="checkbox" id="12">
+                    </div>
+                  </div>
+
+
+                  <div class="filter_option">
+                    <h4>color</h4>
+                    <div class="select">
+                        <div class="color" style="background-color: red;"></div>
+                        <input type="checkbox" id="1">
+                    </div>
+                    <div class="select">
+                        <div class="color" style="background-color: blue;"></div>
+                        <input type="checkbox" id="2">
+                    </div>
+                    <div class="select">
+                        <div class="color" style="background-color: green;"></div>
+                        <input type="checkbox" id="3">
+                    </div>
+                    <div class="select">
+                        <div class="color" style="background-color: orange;"></div>
+                        <input type="checkbox" id="4">
+                    </div>
+                    <div class="select">
+                        <div class="color" style="background-color: black;"></div>
+                        <input type="checkbox" id="5">
+                    </div>
+                    <div class="select">
+                        <div class="color" style="background-color: yellow;"></div>
+                        <input type="checkbox" id="6">
+                    </div>
+             
+                  </div>
+                  
+                </div>
+
+                <div class="products" id="product_item_filter">
+
+                
+                </div>
+                
+        
+
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<section class="backtotop">
+   <h2>back to top</h2>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="logo_content">
+            <img src="img/logo-white.png" alt="">
+            <div class="contact_us">
+                <i class="fa-solid fa-headset"></i>
+                <div class="hotline">
+                    <h5>hotline free 24/24:</h5>
+                   <h6> (+100) 123 456 7890</h6>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, omnis!</p>
+        </div>
+
+        <div class="tags">
+         <h4>faq & help</h4>
+
+         <div class="links">
+            <a href="">f.a.q's</a>
+            <a href="">ordering tracking</a>
+            <a href="">contacts</a>
+            <a href="">events</a>
+            <a href="">help center</a>
+         </div>
+        </div>
+        <div class="tags">
+              <h4>shipping & delivery</h4>
+              <div class="links">
+                <a href="">delivery information</a>
+                <a href="">discount</a>
+                <a href="">payment & shipping</a>
+                <a href="">estimated delivery time</a>
+                <a href="">shipping guide</a>
+             </div>
+        </div>
+
+        <div class="tags">
+                <h4>information</h4>
+                <div class="links">
+                    <a href="">popular</a>
+                    <a href="">our services</a>
+                    <a href="">your account</a>
+                    <a href="">privacy policy</a>
+                    <a href="">terms & condition</a>
+                 </div>
+        </div>
+    </div>
+
+
+    <div class="bottm-footer">
+        <div class="container">
+            <p>copyright &copy; <span> topico. </span> all rights reserved</p>
+            <div class="payment_img">
+                <img src="img/payment-1.png" >
+                <img src="img/payment-2.png" >
+                <img src="img/payment-3.png" >
+                <img src="img/payment-4.png" >
+    
+    
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+<script src="js/main.js"></script>
+<script src="js/all_product.js"></script>
+
+
+</body>
+</html>
